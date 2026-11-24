@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ecuaciones diferenciales ordinarias</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Ecuaciones diferenciales ordinarias de primer orden y de orden n, transformada de Laplace, soluciones en series y funciones especiales, existencia y unicidad, sistemas lineales, plano de fase y estabilidad, con los modelos que las motivan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Ecuaciones <b>diferenciales</b> ordinarias</a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>Las leyes de la naturaleza se escriben como cambios: aprende a leerlas</h1>
+  <p class="lede">Un café que se enfría, una población que crece, un resorte que oscila o una epidemia que se apaga: todos se describen diciendo cómo cambia algo en cada instante. Resolver la ecuación es pasar de esa regla local al comportamiento completo. Este curso enseña los métodos de solución, demuestra por qué la solución existe y es única, y aprende a decir qué pasa a largo plazo aunque no haya fórmula, mirando el campo de direcciones y el plano de fase.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 12 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para quien ya hizo Cálculo en una variable (derivadas, integrales y sus técnicas), Álgebra lineal (matrices, determinantes y espacios vectoriales) y Sucesiones y series (las series de potencias y su radio de convergencia). No hace falta saber física: cada modelo se deduce en el capítulo.</p>
+    <p><b>Cómo está hecho.</b> Cada capítulo parte de un modelo (enfriamiento, poblaciones, resortes, circuitos, depredadores y presas) y lo resuelve primero a mano y después en la pantalla. Los laboratorios dejan mover la condición inicial sobre el campo de direcciones, cambiar el amortiguamiento de un oscilador o arrastrar una matriz por el diagrama de traza y determinante. Las prácticas usan Python con SymPy para resolver de forma exacta y SciPy (`solve_ivp`) para integrar numéricamente y comparar. Este curso habilita Ecuaciones en derivadas parciales, y es parte del recorrido de Matemática II, III y IV, Matemáticas IV, Matemáticas Generales IV, Métodos Matemáticos de la Física I y Ecuaciones Diferenciales Ordinarias.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Ecuaciones de primer orden</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="que-es-una-ecuacion-diferencial"><span class="n">01</span><b>Qué es una ecuación diferencial</b><p>Ecuaciones que relacionan una función con sus derivadas, sus soluciones y el campo de direcciones que las dibuja sin resolverlas.</p></div>
+    <div class="mod soon" data-id="metodos-de-primer-orden"><span class="n">02</span><b>Métodos de solución de primer orden</b><p>Separables, homogéneas, exactas, lineales, Bernoulli y Riccati: reconocer el tipo y aplicar la técnica.</p></div>
+    <div class="mod soon" data-id="modelos-de-primer-orden"><span class="n">03</span><b>Modelos de primer orden y equilibrios</b><p>Poblaciones, epidemias, mezclas y circuitos, y cómo leer el futuro en la línea de fase.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Ecuaciones lineales de orden n</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="teoria-de-las-lineales"><span class="n">04</span><b>La teoría de las ecuaciones lineales de orden n</b><p>Las soluciones forman un espacio vectorial de dimensión n, y el wronskiano decide cuándo se tiene una base.</p></div>
+    <div class="mod soon" data-id="coeficientes-constantes"><span class="n">05</span><b>Coeficientes constantes y oscilaciones</b><p>El polinomio característico, los métodos para la ecuación no homogénea y el oscilador amortiguado y forzado.</p></div>
+    <div class="mod soon" data-id="transformada-de-laplace"><span class="n">06</span><b>La transformada de Laplace</b><p>Convertir una ecuación diferencial en una ecuación algebraica, con entradas que se encienden, se apagan o golpean.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Series y funciones especiales</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="soluciones-en-series"><span class="n">07</span><b>Soluciones en series alrededor de un punto ordinario</b><p>Proponer una serie de potencias, encontrar la recurrencia de los coeficientes y saber dónde converge.</p></div>
+    <div class="mod soon" data-id="frobenius-y-funciones-especiales"><span class="n">08</span><b>Puntos singulares regulares: Frobenius, Bessel y la hipergeométrica</b><p>Series con exponentes no enteros, la ecuación indicial y las funciones especiales que aparecen en la física.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Teoría general, sistemas y estabilidad</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="existencia-y-unicidad"><span class="n">09</span><b>Existencia y unicidad de soluciones</b><p>El teorema de Picard-Lindelöf demostrado, la dependencia de los datos iniciales y lo que pasa cuando falla.</p></div>
+    <div class="mod soon" data-id="sistemas-lineales"><span class="n">10</span><b>Sistemas lineales y la exponencial de una matriz</b><p>Escribir cualquier ecuación lineal como un sistema de primer orden y resolverlo con la matriz fundamental.</p></div>
+    <div class="mod soon" data-id="plano-de-fase"><span class="n">11</span><b>El plano de fase</b><p>Dibujar todas las soluciones de un sistema de dos ecuaciones y clasificar sus equilibrios.</p></div>
+    <div class="mod soon" data-id="estabilidad"><span class="n">12</span><b>Introducción a la teoría de la estabilidad</b><p>Cuándo una perturbación pequeña se apaga y cuándo crece, con los valores propios, Routh-Hurwitz y Lyapunov.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-ecuaciones-diferenciales" target="_blank" rel="noopener">github.com/aaramirez/mate-ecuaciones-diferenciales</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
